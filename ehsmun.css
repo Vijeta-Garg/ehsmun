@@ -20,6 +20,7 @@ body {
 
 #faq {
     margin-top: 30px;
+    text-align: center;
 }
 
 html {
@@ -50,6 +51,7 @@ h4 {
 #welcome {
     margin-left: 40%;
     text-align: right;
+    overflow: hidden;
 }
 
 
@@ -618,4 +620,136 @@ footer {
 .faq-answer img {
     display: block;
     margin: 0 auto;
+}
+/* 
+.image-gallery {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 70px 40px 40px 100px;
+}
+
+.gallery-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #d4af37;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 25px rgba(157, 34, 53, 0.4);
+    border-color: #9d2235;
+    z-index: 10;
+}
+
+.gallery-img:nth-child(2) {
+    transform: translateY(-20px);
+}
+
+.gallery-img:nth-child(2):hover {
+    transform: translateY(-20px) scale(1.15);
+} */
+
+.about-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5%;
+    max-width: 90%;
+    margin: 0 auto 50px auto;  /* Added bottom margin */
+    padding: 0 5%;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 0 0 20%;  /* Changed from 30% to 20% */
+}
+.gallery-img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #d4af37;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 25px rgba(157, 34, 53, 0.4);
+    border-color: #9d2235;
+    z-index: 10;
+}
+
+#welcome {
+    flex: 1;
+    margin: 0;
+    text-align: left;
+}
+
+
+
+#board {
+
+    margin-top: 50px;  /* Reduced margin */
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image-gallery {
+        flex: 0 0 80%;
+        width: 80%;
+    }
+    
+    #welcome {
+        text-align: center;
+    }
+}
+
+#welcome {
+    margin: 70px 0 0 0;
+    text-align: center;  /* Center the text */
+}
+
+.about-section > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center everything in the right column */
+}
+
+#board {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 0 0 12%;  /* Changed from 15% to 12% - adjust this number smaller if needed */
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 350px;  /* This limits the actual size - adjust as needed */
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #d4af37;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
 }
