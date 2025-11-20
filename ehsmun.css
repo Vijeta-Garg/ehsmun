@@ -1,10 +1,9 @@
 h1 {
-    color: #1a365d;
-
+    color: hsl(215, 56%, 23%);
+    text-align: center;
     font-family: sans-serif;
     margin-top: 200px;
     font-size: 50px;
-    margin-left: 700px;
 }
 
 h2 {
@@ -19,20 +18,38 @@ body {
     overflow-x: hidden;
 }
 
+#faq {
+    margin-top: 30px;
+}
+
 html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+
+    scroll-behavior: smooth;
+}
+
+#ehsmun26, #aboutUS, #committee-intro {
+    scroll-margin-top: 200px;
+}
+
+#faq {
+    scroll-margin-top: 100px;
 }
 
 h4 {
-    margin-left: 700px;
     margin-top: 70px;
     font-family: 'Georgia', serif;
     font-weight: normal; 
     font-size: 20px; 
     margin-right: 100px;
     line-height: 1.8;
+    text-align: center;
+}
+#welcome {
+    margin-left: 40%;
+    text-align: right;
 }
 
 
@@ -60,9 +77,12 @@ button {
     border: 30px; 
     border-color: rgb(142, 142, 5);
     color: white;   
-    margin-left: 770px;
+ 
     margin-top: 100px;  
+}
 
+#register-text {
+    text-align: center;
 }
 
 
@@ -79,7 +99,7 @@ button {
 #intro {
     font-size: 20px;
     padding: 100px;
-    margin-left: 300px;
+    text-align: center;
 }
 
 #committee-intro {
@@ -519,3 +539,83 @@ footer {
 }
 
 /*maybe add background to our board thing later*
+
+/* FAQ Dropdown Styles */
+.faq-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    margin-bottom: 80px;
+}
+
+.faq-item {
+    background-color: rgb(244, 236, 187);
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #d4af37;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: #9d2235;
+    box-shadow: 0 3px 10px rgba(157, 34, 53, 0.15);
+}
+
+.faq-question {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 25px 30px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Georgia', serif;
+    color: #1a365d;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.faq-question:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+}
+
+.faq-arrow {
+    color: #9d2235;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 15px;
+}
+
+.faq-item.active .faq-arrow {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    padding: 20px 30px;
+}
+
+.faq-answer p {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2d3748;
+}
+
+.faq-answer img {
+    display: block;
+    margin: 0 auto;
+}
