@@ -1,0 +1,238 @@
+<!Doctype HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHSMUN</title>
+    <!--add an icon!-->
+    <link rel="stylesheet" href="ehsmun.css">
+    <script src="ehsmun.js" defer></script>
+</head>
+
+<body>
+
+    <body>
+    <nav>
+        <div class="nav-content">
+            <a href="ehsmun.html" class="nav-link active">home</a>
+            <a href="about.html" class="nav-link">about us</a>
+            <a href="logistics.html" class="nav-link">more EHSMUN info</a>
+        </div>
+    </nav>
+<svg class="un-logo-bg" width="650" height="650" viewBox="0 0 400 400">
+    <!-- Main globe circle -->
+    <circle class="globe-main" cx="200" cy="200" r="130" fill="none" stroke="#d4af37" stroke-width="4"/>
+    
+    <!-- Concentric latitude circles -->
+    <circle class="lat-circle-1" cx="200" cy="200" r="110" fill="none" stroke="#d4af37" stroke-width="2"/>
+    <circle class="lat-circle-2" cx="200" cy="200" r="85" fill="none" stroke="#d4af37" stroke-width="2"/>
+    <circle class="lat-circle-3" cx="200" cy="200" r="60" fill="none" stroke="#d4af37" stroke-width="2"/>
+    <circle class="lat-circle-4" cx="200" cy="200" r="35" fill="none" stroke="#d4af37" stroke-width="2"/>
+    
+    <!-- Vertical meridian lines (longitude) - 12 sections -->
+    <line class="meridian" x1="200" y1="70" x2="200" y2="330" stroke="#d4af37" stroke-width="2"/>
+    <line class="meridian" x1="144" y1="78" x2="256" y2="322" stroke="#d4af37" stroke-width="2"/>
+    <line class="meridian" x1="101" y1="101" x2="299" y2="299" stroke="#d4af37" stroke-width="2"/>
+    <line class="meridian" x1="78" y1="144" x2="322" y2="256" stroke="#d4af37" stroke-width="2"/>
+    <line class="meridian" x1="70" y1="200" x2="330" y2="200" stroke="#d4af37" stroke-width="2"/>
+    <line class="meridian" x1="78" y1="256" x2="322" y2="144" stroke="#d4af37" stroke-width="2"/>
+    <line class="meridian" x1="101" y1="299" x2="299" y2="101" stroke="#d4af37" stroke-width="2"/>
+    <line class="meridian" x1="144" y1="322" x2="256" y2="78" stroke="#d4af37" stroke-width="2"/>
+    <line class="meridian" x1="200" y1="330" x2="200" y2="70" stroke="#d4af37" stroke-width="2"/>
+    <line class="meridian" x1="256" y1="322" x2="144" y2="78" stroke="#d4af37" stroke-width="2"/>
+    <line class="meridian" x1="299" y1="299" x2="101" y2="101" stroke="#d4af37" stroke-width="2"/>
+    <line class="meridian" x1="322" y1="256" x2="78" y2="144" stroke="#d4af37" stroke-width="2"/>
+    
+    <!-- Left wreath branch -->
+    <g class="left-wreath">
+        <!-- Main stem curve -->
+        <path class="wreath-stem" d="M 60 110 Q 45 150, 40 200 Q 45 250, 65 290 Q 80 315, 110 335" 
+              fill="none" stroke="#d4af37" stroke-width="12"/>
+        
+        <!-- Individual olive leaves - left side pointing outward and upward -->
+        <ellipse class="olive-leaf" cx="52" cy="120" rx="5" ry="12" fill="#d4af37" transform="rotate(-60 52 120)"/>
+        <ellipse class="olive-leaf" cx="46" cy="140" rx="5" ry="12" fill="#d4af37" transform="rotate(-55 46 140)"/>
+        <ellipse class="olive-leaf" cx="42" cy="160" rx="5" ry="12" fill="#d4af37" transform="rotate(-50 42 160)"/>
+        <ellipse class="olive-leaf" cx="39" cy="180" rx="5" ry="12" fill="#d4af37" transform="rotate(-45 39 180)"/>
+        <ellipse class="olive-leaf" cx="38" cy="200" rx="5" ry="12" fill="#d4af37" transform="rotate(-40 38 200)"/>
+        <ellipse class="olive-leaf" cx="39" cy="220" rx="5" ry="12" fill="#d4af37" transform="rotate(-35 39 220)"/>
+        <ellipse class="olive-leaf" cx="43" cy="240" rx="5" ry="12" fill="#d4af37" transform="rotate(-30 43 240)"/>
+        <ellipse class="olive-leaf" cx="52" cy="260" rx="5" ry="12" fill="#d4af37" transform="rotate(-25 52 260)"/>
+        <ellipse class="olive-leaf" cx="63" cy="280" rx="5" ry="12" fill="#d4af37" transform="rotate(-20 63 280)"/>
+        <ellipse class="olive-leaf" cx="78" cy="300" rx="5" ry="12" fill="#d4af37" transform="rotate(-15 78 300)"/>
+        <ellipse class="olive-leaf" cx="93" cy="318" rx="5" ry="12" fill="#d4af37" transform="rotate(-10 93 318)"/>
+        
+        <!-- Right side pointing inward and upward -->
+        <ellipse class="olive-leaf" cx="68" cy="115" rx="5" ry="12" fill="#d4af37" transform="rotate(60 68 115)"/>
+        <ellipse class="olive-leaf" cx="60" cy="135" rx="5" ry="12" fill="#d4af37" transform="rotate(55 60 135)"/>
+        <ellipse class="olive-leaf" cx="54" cy="155" rx="5" ry="12" fill="#d4af37" transform="rotate(50 54 155)"/>
+        <ellipse class="olive-leaf" cx="51" cy="175" rx="5" ry="12" fill="#d4af37" transform="rotate(45 51 175)"/>
+        <ellipse class="olive-leaf" cx="50" cy="195" rx="5" ry="12" fill="#d4af37" transform="rotate(40 50 195)"/>
+        <ellipse class="olive-leaf" cx="51" cy="215" rx="5" ry="12" fill="#d4af37" transform="rotate(35 51 215)"/>
+        <ellipse class="olive-leaf" cx="55" cy="235" rx="5" ry="12" fill="#d4af37" transform="rotate(30 55 235)"/>
+        <ellipse class="olive-leaf" cx="64" cy="255" rx="5" ry="12" fill="#d4af37" transform="rotate(25 64 255)"/>
+        <ellipse class="olive-leaf" cx="75" cy="275" rx="5" ry="12" fill="#d4af37" transform="rotate(20 75 275)"/>
+        <ellipse class="olive-leaf" cx="90" cy="295" rx="5" ry="12" fill="#d4af37" transform="rotate(15 90 295)"/>
+        <ellipse class="olive-leaf" cx="105" cy="313" rx="5" ry="12" fill="#d4af37" transform="rotate(10 105 313)"/>
+    </g>
+    
+    <!-- Right wreath branch -->
+    <g class="right-wreath">
+        <!-- Main stem curve -->
+        <path class="wreath-stem" d="M 340 110 Q 355 150, 360 200 Q 355 250, 335 290 Q 320 315, 290 335" 
+              fill="none" stroke="#d4af37" stroke-width="12"/>
+        
+        <!-- Individual olive leaves - right side pointing outward and upward -->
+        <ellipse class="olive-leaf" cx="348" cy="120" rx="5" ry="12" fill="#d4af37" transform="rotate(60 348 120)"/>
+        <ellipse class="olive-leaf" cx="354" cy="140" rx="5" ry="12" fill="#d4af37" transform="rotate(55 354 140)"/>
+        <ellipse class="olive-leaf" cx="358" cy="160" rx="5" ry="12" fill="#d4af37" transform="rotate(50 358 160)"/>
+        <ellipse class="olive-leaf" cx="361" cy="180" rx="5" ry="12" fill="#d4af37" transform="rotate(45 361 180)"/>
+        <ellipse class="olive-leaf" cx="362" cy="200" rx="5" ry="12" fill="#d4af37" transform="rotate(40 362 200)"/>
+        <ellipse class="olive-leaf" cx="361" cy="220" rx="5" ry="12" fill="#d4af37" transform="rotate(35 361 220)"/>
+        <ellipse class="olive-leaf" cx="357" cy="240" rx="5" ry="12" fill="#d4af37" transform="rotate(30 357 240)"/>
+        <ellipse class="olive-leaf" cx="348" cy="260" rx="5" ry="12" fill="#d4af37" transform="rotate(25 348 260)"/>
+        <ellipse class="olive-leaf" cx="337" cy="280" rx="5" ry="12" fill="#d4af37" transform="rotate(20 337 280)"/>
+        <ellipse class="olive-leaf" cx="322" cy="300" rx="5" ry="12" fill="#d4af37" transform="rotate(15 322 300)"/>
+        <ellipse class="olive-leaf" cx="307" cy="318" rx="5" ry="12" fill="#d4af37" transform="rotate(10 307 318)"/>
+        
+        <!-- Left side pointing inward and upward -->
+        <ellipse class="olive-leaf" cx="332" cy="115" rx="5" ry="12" fill="#d4af37" transform="rotate(-60 332 115)"/>
+        <ellipse class="olive-leaf" cx="340" cy="135" rx="5" ry="12" fill="#d4af37" transform="rotate(-55 340 135)"/>
+        <ellipse class="olive-leaf" cx="346" cy="155" rx="5" ry="12" fill="#d4af37" transform="rotate(-50 346 155)"/>
+        <ellipse class="olive-leaf" cx="349" cy="175" rx="5" ry="12" fill="#d4af37" transform="rotate(-45 349 175)"/>
+        <ellipse class="olive-leaf" cx="350" cy="195" rx="5" ry="12" fill="#d4af37" transform="rotate(-40 350 195)"/>
+        <ellipse class="olive-leaf" cx="349" cy="215" rx="5" ry="12" fill="#d4af37" transform="rotate(-35 349 215)"/>
+        <ellipse class="olive-leaf" cx="345" cy="235" rx="5" ry="12" fill="#d4af37" transform="rotate(-30 345 235)"/>
+        <ellipse class="olive-leaf" cx="336" cy="255" rx="5" ry="12" fill="#d4af37" transform="rotate(-25 336 255)"/>
+        <ellipse class="olive-leaf" cx="325" cy="275" rx="5" ry="12" fill="#d4af37" transform="rotate(-20 325 275)"/>
+        <ellipse class="olive-leaf" cx="310" cy="295" rx="5" ry="12" fill="#d4af37" transform="rotate(-15 310 295)"/>
+        <ellipse class="olive-leaf" cx="295" cy="313" rx="5" ry="12" fill="#d4af37" transform="rotate(-10 295 313)"/>
+    </g>
+    
+    <!-- Bottom connection of wreath -->
+    <path class="wreath-bottom" d="M 110 335 Q 150 348, 200 350 Q 250 348, 290 335" 
+          fill="none" stroke="#d4af37" stroke-width="12" stroke-linecap="round"/>
+</svg>
+
+<h1 class="typing-text">EHSMUN '26</h1>
+    
+    <h2>
+        edison, nj<br>
+        jan 5th
+    </h2>
+
+    <button id="REGISTER">Register</button>
+
+    <p id="intro">
+        Welcome to EHSMUN, a one-day beginner-friendly conference for highschoolers in Edison NJ. 
+        **add more to this intro! 
+    </p>
+<!---eagle flying in the background!-->
+    <h2 id="committee-intro">Committees</h2>
+<div class ="GA">
+    <h2 id="type">General Assembly</h2>
+    <h2>Chairs: Ishani Bakshi and Aanya Jari</h2>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+        <h3 class="topics" style="margin: 15px 0; padding: 15px 20px;">Combatting Child Labor and Exploitation in the Digital Economy</h3>
+        <svg class="likes-animation" width="85" height="85" viewBox="0 0 60 60">
+            <!-- Like icon 1 -->
+            <g class="like-icon like-1">
+                <path d="M 20 35 L 20 45 L 25 45 L 25 35 Z" fill="#9d2235" stroke="#1a365d" stroke-width="1"/>
+                <path d="M 25 35 Q 25 30, 28 28 Q 30 26, 32 28 L 32 35 L 40 35 Q 42 35, 42 37 L 42 43 Q 42 45, 40 45 L 25 45" 
+                      fill="#9d2235" stroke="#1a365d" stroke-width="1"/>
+            </g>
+            <!-- Like icon 2 -->
+            <g class="like-icon like-2">
+                <path d="M 20 35 L 20 45 L 25 45 L 25 35 Z" fill="#d4af37" stroke="#1a365d" stroke-width="1"/>
+                <path d="M 25 35 Q 25 30, 28 28 Q 30 26, 32 28 L 32 35 L 40 35 Q 42 35, 42 37 L 42 43 Q 42 45, 40 45 L 25 45" 
+                      fill="#d4af37" stroke="#1a365d" stroke-width="1"/>
+            </g>
+            <!-- Like icon 3 -->
+            <g class="like-icon like-3">
+                <path d="M 20 35 L 20 45 L 25 45 L 25 35 Z" fill="#4a90e2" stroke="#1a365d" stroke-width="1"/>
+                <path d="M 25 35 Q 25 30, 28 28 Q 30 26, 32 28 L 32 35 L 40 35 Q 42 35, 42 37 L 42 43 Q 42 45, 40 45 L 25 45" 
+                      fill="#4a90e2" stroke="#1a365d" stroke-width="1"/>
+            </g>
+        </svg>
+    </div>
+    <button>Background Guide Coming Soon</button>
+</div>
+
+<div class ="Spec">
+    <h2 id="type">Specialized</h2>
+    <h2>Chairs: Vijeta Garg and Chaithanyashree</h2>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+        <h3 class="topics" style="margin: 15px 0; padding: 15px 20px;">United Nations Committee on the Future of the Outer Space Treaty</h3>
+        <svg class="rocket-animation" width="85" height="85" viewBox="0 0 60 60">
+            <!-- Rocket body -->
+            <path class="rocket-body" d="M 30 10 L 35 30 L 35 40 L 25 40 L 25 30 Z" 
+                  fill="#d4af37" stroke="#1a365d" stroke-width="1"/>
+            
+            <!-- Rocket tip -->
+            <path class="rocket-tip" d="M 30 10 L 25 20 L 35 20 Z" 
+                  fill="#9d2235" stroke="#1a365d" stroke-width="1"/>
+            
+            <!-- Window -->
+            <circle cx="30" cy="25" r="3" fill="#4a90e2" stroke="#1a365d" stroke-width="1"/>
+            
+            <!-- Left fin -->
+            <path class="rocket-fin" d="M 25 35 L 20 45 L 25 40 Z" 
+                  fill="#9d2235" stroke="#1a365d" stroke-width="1"/>
+            
+            <!-- Right fin -->
+            <path class="rocket-fin" d="M 35 35 L 40 45 L 35 40 Z" 
+                  fill="#9d2235" stroke="#1a365d" stroke-width="1"/>
+            
+            <!-- Flame -->
+            <path class="flame" d="M 27 40 Q 30 48, 33 40" 
+                  fill="#d4af37" opacity="0.7"/>
+        </svg>
+    </div>
+    <button>Background Guide Coming Soon</button>
+</div>
+
+<div class = "crisis">
+    <h2 id="type">Crisis</h2>
+    <h2>Chairs: Aditya Rao and Akshat Dubey</h2>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+        <h3 class="topics" style="margin: 15px 0; padding: 15px 20px;">King of the Hill</h3>
+        <svg class="crown-animation" width="85" height="85" viewBox="0 0 60 60">
+            <!-- Crown -->
+            <path class="crown" d="M 15 35 L 20 25 L 25 30 L 30 20 L 35 30 L 40 25 L 45 35 L 45 40 L 15 40 Z" 
+                  fill="#d4af37" stroke="#1a365d" stroke-width="1.5"/>
+            <!-- Jewels -->
+            <circle class="jewel jewel-1" cx="22" cy="32" r="2" fill="#9d2235"/>
+            <circle class="jewel jewel-2" cx="30" cy="28" r="2.5" fill="#9d2235"/>
+            <circle class="jewel jewel-3" cx="38" cy="32" r="2" fill="#9d2235"/>
+            <!-- Crown base -->
+            <rect x="15" y="40" width="30" height="5" fill="#d4af37" stroke="#1a365d" stroke-width="1.5"/>
+        </svg>
+    </div>
+    <button>Background Guide Coming Soon</button>
+</div>
+
+
+    <!--revolving slide-->
+<!--add real info here!!!!::-->
+    <footer>
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+                <a href="mailto:ehsmun@example.com" class="contact-link">
+                    <span class="contact-icon"></span>
+                    ehsmun@example.com
+                </a>
+                <a href="https://instagram.com/ehsmun" target="_blank" class="contact-link">
+                    <span class="contact-icon"></span>
+                    @ehsmun
+                </a>
+            </div>
+            <p class="footer-note">Reach out to us with any questions!</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+</body>
+</html>
