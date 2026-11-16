@@ -31,12 +31,12 @@ html {
     scroll-behavior: smooth;
 }
 
-#ehsmun26, #aboutUS, #committee-intro {
+#ehsmun26, #aboutUS, #committee-intro, #ehsmun-26 {
     scroll-margin-top: 200px;
 }
 
 #faq {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 140px;
 }
 
 h4 {
@@ -98,7 +98,7 @@ button {
 
 
 
-#intro {
+#intro, #conference-intro {
     font-size: 20px;
     padding: 100px;
     text-align: center;
@@ -796,4 +796,211 @@ footer {
         font-size: 12px;
         margin-top: 15px;
     }
+}
+/* EHSMUN Flagship section */
+#flagship {
+    margin-top: 100px;
+    scroll-margin-top: 140px;
+}
+
+.flagship-section {
+    max-width: 1100px;
+    margin: 0 auto 80px auto;
+    padding: 0 20px;
+}
+
+.flagship-text {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: center;
+    color: #2d3748;
+    min-height: 150px;
+    margin: 40px auto 60px auto;
+    max-width: 900px;
+}
+
+.flagship-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.flagship-card {
+    flex: 1;
+    max-width: 320px;
+    min-height: 250px;
+    background-color: rgb(244, 236, 187);
+    border-radius: 8px;
+    padding: 30px 25px;
+    text-align: center;
+}
+
+.flagship-card .flagship-type {
+    margin: 10px 0;
+    font-size: 26px;
+    font-weight: bold;
+    color: #9d2235;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: 'Arial', sans-serif;
+}
+
+.flagship-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.flagship-card .flagship-chairs {
+    color: #1a365d;
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.flagship-card a {
+    margin-top: auto;
+}
+
+.flagship-card button {
+    margin: 20px auto 10px auto;
+    display: block;
+    background-color: #1a365d;
+    font-size: 15px;
+    font-family: 'Arial', sans-serif;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.flagship-card button:hover {
+    background-color: #9d2235;
+}
+
+@media (max-width: 768px) {
+    .flagship-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flagship-card {
+        width: 100%;
+    }
+}
+
+/* Edison High School logo in navbar */
+.nav-logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+.nav-logo img {
+    height: 80px;
+    width: auto;
+}
+
+/* Taller navbar so the bigger logo fits */
+nav {
+    padding: 30px 0;
+}
+
+body {
+    padding-top: 120px;
+}
+
+@media (max-width: 768px) {
+    .nav-logo {
+        left: 10px;
+    }
+
+    .nav-logo img {
+        height: 40px;
+    }
+
+    .nav-content {
+        padding-left: 60px;
+    }
+}
+
+/* EHSMUN '26: committee boxes sit right under the intro text */
+#conference-intro {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+}
+
+/* Center footer (padding was pushing it wider than the page) */
+footer {
+    box-sizing: border-box;
+}
+
+/* Flagship: cards sit right under the intro text */
+.flagship-text {
+    min-height: 0;
+    margin-bottom: 10px;
+}
+
+.flagship-card {
+    min-height: 340px;
+}
+
+/* Navbar: every tab uses the same style; the current tab is gold + bold.
+   Each link reserves its bold width so tabs don't shift when it changes. */
+.nav-link,
+.nav-link:hover,
+.nav-link.active {
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: attr(data-text);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.nav-link:hover {
+    color: #d4af37;
+}
+
+.nav-link.active {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+/* Our Board list matches the About Us description font */
+#people {
+    font-family: 'Georgia', serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #2d3748;
+}
+
+/* Date sits right above the EHSMUN '26 description */
+#ehsmun-26 + h2 {
+    margin-bottom: 10px;
+}
+
+/* Committee description inside flagship cards */
+.flagship-card .flagship-desc {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2d3748;
+    margin: 10px 0;
 }

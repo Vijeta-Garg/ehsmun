@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Update active nav link on scroll
 window.addEventListener('scroll', function() {
-    const sections = document.querySelectorAll('#ehsmun26, #committee-intro, #aboutUS, #faq');
+    const sections = document.querySelectorAll('#ehsmun26, #flagship, #aboutUS, #ehsmun-26, #faq');
     const navLinks = document.querySelectorAll('.nav-link');
     
     let current = '';
@@ -74,6 +74,11 @@ window.addEventListener('scroll', function() {
             current = section.getAttribute('id');
         }
     });
+
+    // At the very bottom of the page, highlight the last tab (FAQ)
+    if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 2) {
+        current = sections[sections.length - 1].getAttribute('id');
+    }
     
     navLinks.forEach(link => {
         link.classList.remove('active');
